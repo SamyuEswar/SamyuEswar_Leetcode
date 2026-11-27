@@ -1,0 +1,11 @@
+class Solution {
+    public int heightChecker(int[] h) {
+        int[] e=h.clone();
+        Arrays.sort(e);
+        int c=0;
+        for(int i=0;i<h.length;i++){
+            if(!(e[i]==h[i])) c++;
+        }
+        return c;
+    }
+}
